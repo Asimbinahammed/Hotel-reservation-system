@@ -4,9 +4,16 @@
 
 package com.bridgelab;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HotelReservationSystem {
-    //main method
-    public static void main(String[] args) {
-        System.out.println("Welcome to Hotel reservation system");
+    ArrayList hotelList=new ArrayList();
+    public void addHotel(String hotelName, int regularCustomerRate) {
+        Hotel hotel = new Hotel();
+        hotel.setHotelName(hotelName);
+        hotel.setRegularCustomerCost(regularCustomerRate);
+        Hotel.add(hotel);
     }
+
 }
