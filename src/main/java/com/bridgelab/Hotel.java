@@ -1,33 +1,30 @@
 package com.bridgelab;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Hotel {
-    private static Object Hotel;
     private String hotelName;
-    private int regularCustomerCost;
+    private int weekDayRate;
 
-    public Hotel(String lakewood, int i) {
-        this.Hotel=Hotel;
-        this.regularCustomerCost=regularCustomerCost;
-
+    public Hotel(String hotelName, int weekDayRate) {
+        this.hotelName = hotelName;
+        this.weekDayRate = weekDayRate;
     }
 
-    //adding hotel into arraylist
-
-
-    //to get hotelname
+    /*
+    Getters and setters for hotelname and rate
+     */
     public String getHotelName() {
         return hotelName;
     }
 
-    //set regular customer price
-    public void setRegularCustomerCost(int regularCustomerCost) {
-        this.regularCustomerCost = regularCustomerCost;
+    public void setHotelName(String hotelName) {
+        this.hotelName = hotelName;
     }
 
-    //set hotel name
-    public void setHotelName(String hotelName) {
+    public int getWeekDayRate() {
+        return weekDayRate;
+    }
+
+    public void setWeekDayRate(int weekDayRate) {
+        this.weekDayRate = weekDayRate;
     }
 }
